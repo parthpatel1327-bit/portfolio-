@@ -660,7 +660,7 @@ ul.bullet-list li {
             <div class="meta-info"><b>Objective:</b> Create a comprehensive 3D industrial plant environment using CATIA V5 to map out complex pipeline routings, equipment configurations, and dimensional constraints.</div>
             <div class="meta-info"><b>Tools Used:</b> CATIA V5 (Piping & Equipment Design), AutoCAD (2D Arrangements), Microsoft Excel (Sizing Calculations).</div>
         </div>
-        <!-- Project 8: Box Jig Manufacturing -->
+               <!-- Project 8: Box Jig Manufacturing -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -669,23 +669,23 @@ ul.bullet-list li {
                 <div class="card-date">Duration: 4 months</div>
             </div>
 
-            <!-- 2X2 PHOTOGRAPHY & BLUEPRINT GRID -->
+            <!-- 2X2 PHOTOGRAPHY & BLUEPRINT GRID WITH CLICK-TO-ZOOM ENABLED -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 20px;">
-                <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/box-jig-front.jpg" alt="Machined Box Jig Face Assembly View" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Machined Prototype - Front View</div>
+                <div style="background: #ffffff; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
+                    <img src="images/box-jig-front.jpg" alt="Machined Box Jig Front Assembly View" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer; background: #f8fafc;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 6px 8px; font-weight: 500; pointer-events: none;">Machined Prototype - Front View</div>
                 </div>
-                <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/box-jig-internal.jpg" alt="Machined Box Jig Internal Core Profile" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Machined Prototype - Internal Cavity</div>
+                <div style="background: #ffffff; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
+                    <img src="images/box-jig-internal.jpg" alt="Machined Box Jig Internal Cavity" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer; background: #f8fafc;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 6px 8px; font-weight: 500; pointer-events: none;">Machined Prototype - Internal Cavity</div>
                 </div>
-                <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/box-jig-sheet1.jpg" alt="2D Engineering Blueprint Layout Components" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Component Layout Blueprint</div>
+                <div style="background: #ffffff; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
+                    <img src="images/box-jig-sheet1.jpg" alt="Component Layout Blueprint Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer; background: #ffffff;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 6px 8px; font-weight: 500; pointer-events: none;">Component Layout Blueprint</div>
                 </div>
-                <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/box-jig-section.jpg" alt="Assembly Cross-Section View Print" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Section Cut & Bill of Materials</div>
+                <div style="background: #ffffff; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
+                    <img src="images/box-jig-section.jpg" alt="Assembly Cross-Section Blueprint View" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; pointer-events: auto; cursor: pointer; background: #ffffff;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 6px 8px; font-weight: 500; pointer-events: none;">Section Cut & Bill of Materials</div>
                 </div>
             </div>
 
@@ -697,7 +697,30 @@ ul.bullet-list li {
             </ul>
             <div class="meta-info"><b>Objective:</b> Design and execute the conventional machining, precision manufacturing, and mechanical verification of an operational industrial box jig tooling assembly.</div>
             <div class="meta-info"><b>Tools Used:</b> SolidWorks (Drafting & Assembly Prints), Conventional Lathe Turning, Industrial Milling Equipment, Precision Measurement Gauges.</div>
+
+            <!-- REUSABLE FULL SCREEN INTERACTIVE MODAL COMPONENT -->
+            <div id="portfolioLightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.95); z-index: 9999; justify-content: center; align-items: center; cursor: zoom-out;" onclick="closeLightbox()">
+                <span style="position: absolute; top: 20px; right: 30px; color: #ffffff; font-size: 36px; font-weight: bold; cursor: pointer; user-select: none;">&times;</span>
+                <img id="lightboxTargetImg" src="" alt="Zoomed Blueprint View" style="max-width: 90%; max-height: 85%; object-fit: contain; border-radius: 4px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);">
+                <div id="lightboxCaption" style="position: absolute; bottom: 30px; color: #e2e8f0; font-size: 15px; font-weight: 500; text-align: center; max-width: 80%; background: rgba(30,41,59,0.8); padding: 8px 16px; border-radius: 20px;"></div>
+            </div>
+
+            <script>
+            function openLightbox(imgElement) {
+                var modal = document.getElementById('portfolioLightbox');
+                var modalImg = document.getElementById('lightboxTargetImg');
+                var caption = document.getElementById('lightboxCaption');
+                
+                modal.style.display = "flex";
+                modalImg.src = imgElement.src;
+                caption.innerHTML = imgElement.alt;
+            }
+            function closeLightbox() {
+                document.getElementById('portfolioLightbox').style.display = "none";
+            }
+            </script>
         </div>
+
         <!-- Project 9: Plate Jig -->
         <div class="card">
             <div class="card-header">
