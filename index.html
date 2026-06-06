@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parthkumar Patel | Portfolio</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8fafc;
+    color: #334155;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    margin: 0;
+    color: #0f172a;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-weight: 600;
+    color: #475569;
+    transition: color 0.2s;
+}
+
+nav ul li:hover {
+    color: #2563eb;
+}
+
+/* HERO SECTION */
+.hero {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px 40px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.hero h3 {
+    color: #2563eb;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* HEADER CONTACT LINKS */
+.header-contact {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header-contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.header-contact a:hover {
+    text-decoration: underline;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* GENERAL SECTIONS */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* SKILLS SECTION */
+.skills-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-top: 40px;
+}
+
+.skills-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-container li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* CARDS FOR EXP & PROJECTS */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 35px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.card-title h3 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 20px;
+}
+
+.card-subtitle {
+    color: #2563eb;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.card-date {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.project-meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item {
+    background: #f1f5f9;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #475569;
+    border-left: 4px solid #cbd5e1;
+}
+
+/* CONTACT FOOTER */
+.contact-container {
+    background: #0f172a;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.contact-container h2 {
+    margin-top: 0;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav { padding: 20px; flex-direction: column; gap: 15px; }
+    .card-header { flex-direction: column; gap: 5px; }
+    .card-date { text-align: left; }
+    .header-contact { flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2>Parth Patel</h2>
+    <ul>
+        <li onclick="scrollToSection('home')">Home</li>
+        <li onclick="scrollToSection('skills')">Technical Skills</li>
+        <li onclick="scrollToSection('experience')">Professional Experience</li>
+        <li onclick="scrollToSection('projects')">Engineering Projects</li>
+    </ul>
+</nav>
+
+<!-- INTRO / HOME -->
+<div id="home" class="hero">
+    <h1>Parthkumar Patel</h1>
+    <h3>Mechanical Engineering Technologist | Design, Validation & R&D</h3>
+    
+    <!-- HIGH-VISIBILITY TOP LINKS -->
+    <div class="header-contact">
+        <span>Email: <a href="mailto:parthpatel1327@gmail.com">parthpatel1327@gmail.com</a></span>
+        <span>•</span>
+        <span>LinkedIn: <a href="https://linkedin.com" target="_blank">View Profile</a></span>
+    </div>
+    
+    <p>
+        Mechanical Engineering Technologist with over four years of experience in design engineering, manufacturing, validation testing, and safety-critical systems. Graduate of Sheridan College's Mechanical Engineering Technology – Design & Drafting program, with hands-on experience supporting automotive, industrial equipment, and applied research projects.
+    </p>
+    <p>
+        Experienced in 3D CAD modeling, engineering drawings, GD&T application, design validation, product testing, traceability implementation, and process improvement. Contributed to safety-critical automotive programs at L&T Technology Services, manufacturing engineering initiatives at Linamar, and structural validation projects for Mobile Elevating Work Platforms (MEWPs) at Skyjack.
+    </p>
+    <p>
+        Proficient in SolidWorks, AutoCAD, Windchill, and engineering data acquisition systems, with a strong ability to bridge design concepts with real-world manufacturing and validation requirements. Recognized for applying analytical problem-solving, technical communication, and cross-functional collaboration to deliver practical, reliable, and manufacturable engineering solutions.
+    </p>
+</div>
+
+<!-- TECHNICAL SKILLS -->
+<div id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <ul>
+            <li><b>CAD Software & Design Tools:</b> SolidWorks, Creo 4.0, AutoCAD, Catia V5, Inventor, 3Ds Max, Master Cam</li>
+            <li><b>Engineering Methods & Analysis:</b> Geometric Dimensioning & Tolerancing (GD&T), Tolerance Stack-up Analysis, Clearance Studies, Design Verification Plan & Report (DVP&R), Failure Mode and Effects Analysis (FMEA), Root Cause Analysis</li>
+            <li><b>Data Acquisition (DAQ) & Automation:</b> Somat eDAQ Hardware, Somat Infield Software, Automation System Integration, Process Automation Tools</li>
+            <li><b>Quality & Auditing Frameworks:</b> Layered Process Audits (LPA), Compliance Auditing, Component Traceability Systems (QR Code-Based Verification), ISO Standards Compliance, Lab Audits</li>
+            <li><b>Manufacturing & Process Engineering:</b> Piping and Instrumentation Diagrams (P&ID), Bill of Materials (BOM) Validation, Engineering Routing Documents (ERD), Time Studies, Workflow Optimization, Tooling/Fixture Design (V-Blocks, Custom Brackets, Catch Bars), Repair & Rework Procedures</li>
+            <li><b>PLM & Enterprise Platforms (ERP):</b> Windchill, AS400, MobileAsset (Inventory Tool), TutorOcean</li>
+            <li><b>Project Management & Collaboration:</b> MS Project, MS Office Suite, Cross-Functional Team Leadership, Technical Lesson Planning</li>
+        </ul>
+    </div>
+</div>
+
+<!-- PROFESSIONAL EXPERIENCE -->
+<div id="experience" class="section">
+    <h2>Professional Experience</h2>
+    
+    <!-- SKYJACK -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                <h3>Design & Validation Engineering Co-op</h3>
+                <div class="card-subtitle">SKYJACK | Guelph, ON</div>
+            </div>
+            <div class="card-date">Jan 2025 – May 2025 /<br>Jan 2026 – Apr 2026</div>
+        </div>
+        <ul>
+            <li>Designed custom test support equipment including stabilizing catch bars for scissor lift MEWPs and specialized brackets used to mount sensors and testing hardware using SolidWorks and TCE.</li>
+            <li>Collected and analyzed real-time structural validation test data using Somat eDAQ hardware and Somat Infield software to evaluate machine stability, system performance, and component durability.</li>
+            <li>Set up and calibrated test equipment, including new angle and displacement sensors, conducted cyclic increment force testing to analyze tire stiffness, and drafted detailed technical Work Instructions to ensure accurate, repeatable validation procedures.</li>
+            <li>Worked cross-functionally with design, manufacturing, and quality teams to develop and fabricate custom test tooling to support structural validation and North American safety standards compliance.</li>
+            <li>Engineered and implemented an automatic data processing tool to streamline Tire Press testing results, eliminating manual processing and significantly reducing lead times for stability reports.</li>
+            <li>Managed the Global Master Tracker and Priority Tracker to provide progress updates and update Design Verification Plans as requested by global engineering management.</li>
+            <li>Conducted monthly laboratory equipment audits and developed a weekly tracking system for tool usage across multi-disciplinary engineering teams to ensure equipment availability and calibration compliance.</li>
+        </ul>
+    </div>
+
+    <!-- SHERIDAN RESEARCH -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                <h3>Research Assistant – Liquid-Liquid Extraction Project (NSERC Funded)</h3>
+                <div class="card-subtitle">SHERIDAN COLLEGE – CENTRE FOR INTELLIGENT MANUFACTURING | Brampton, ON</div>
+            </div>
+            <div class="card-date">Sep 2024 – Nov 2024</div>
+        </div>
+        <ul>
