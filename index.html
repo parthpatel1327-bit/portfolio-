@@ -12,7 +12,7 @@ body {
     color: #334155;
 }
 
-/* NAVBAR */
+/* NAVBAR LAYOUT */
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,27 +43,40 @@ nav ul li {
     cursor: pointer;
     font-weight: 600;
     color: #475569;
-    transition: color 0.2s;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
 }
 
 nav ul li:hover {
     color: #2563eb;
+    background: #f1f5f9;
 }
 
-/* CONTAINER */
+nav ul li.active-tab {
+    color: white;
+    background: #2563eb;
+}
+
+/* WORKSPACE CONTAINER */
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px 20px;
 }
 
-/* HERO SECTION */
-.hero {
-    margin-bottom: 40px;
+/* DYNAMIC SWITCHING ARCHITECTURE */
+.portfolio-section {
+    display: none;
 }
 
+.portfolio-section.active-view {
+    display: block;
+}
+
+/* SUMMARY / HERO BRANDING */
 .hero h1 {
-    font-size: 38px;
+    font-size: 40px;
     color: #0f172a;
     margin-bottom: 5px;
 }
@@ -73,14 +86,13 @@ nav ul li:hover {
     margin-top: 5px;
     margin-bottom: 15px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-/* HEADER CONTACT LINKS */
 .header-contact {
     display: flex;
     gap: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 15px;
     font-weight: 500;
 }
@@ -95,115 +107,109 @@ nav ul li:hover {
 }
 
 .hero p {
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-/* SECTIONS */
-.section-title {
+/* CONTENT CONTAINER DESIGNS */
+.section-headline {
     color: #0f172a;
     border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 8px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 26px;
 }
 
-/* SKILLS CONTAINER */
-.skills-container {
+.skills-wrapper {
     background: white;
-    padding: 25px;
+    padding: 30px;
     border-radius: 8px;
     border: 1px solid #e2e8f0;
 }
 
-.skills-container ul {
+.skills-wrapper ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
 
-.skills-container li {
-    margin-bottom: 12px;
+.skills-wrapper li {
+    margin-bottom: 18px;
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 15.5px;
 }
 
-.skills-container li:last-child {
-    margin-bottom: 0;
-}
-
-/* CARDS FOR EXP & PROJECTS */
+/* CARDS FOR EXPERIENCES & PROJECTS */
 .card {
     background: white;
-    padding: 22px;
+    padding: 25px;
     border-radius: 8px;
     border: 1px solid #e2e8f0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .card-title h3 {
     margin: 0;
     color: #0f172a;
-    font-size: 19px;
+    font-size: 21px;
 }
 
 .card-subtitle {
     color: #2563eb;
     font-weight: 600;
-    margin-top: 4px;
-    font-size: 15px;
+    margin-top: 5px;
+    font-size: 16px;
 }
 
 .card-date {
     color: #64748b;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
     text-align: right;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-.project-meta {
-    margin-top: 8px;
-    font-size: 14px;
+.meta-info {
+    margin-top: 10px;
+    font-size: 14.5px;
     color: #64748b;
     line-height: 1.5;
 }
 
-ul.card-bullets {
+ul.bullet-list {
     padding-left: 20px;
     margin: 0;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
-ul.card-bullets li {
-    margin-bottom: 6px;
-    font-size: 14.5px;
+ul.bullet-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
 }
 
-/* GALLERY GRID */
+/* DRAWING PLATFORM GALLERY */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 12px;
-    margin-top: 15px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.gallery-item {
+.gallery-card {
     background: white;
-    padding: 12px 18px;
+    padding: 15px 20px;
     border-radius: 6px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 14.5px;
     color: #475569;
     border-left: 4px solid #2563eb;
     border-top: 1px solid #e2e8f0;
@@ -211,13 +217,13 @@ ul.card-bullets li {
     border-bottom: 1px solid #e2e8f0;
 }
 
-/* CONTACT FOOTER */
+/* PREMIUM FOOTER */
 .contact-container {
     background: #0f172a;
     color: white;
     padding: 40px 20px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .contact-container h2 {
@@ -243,53 +249,55 @@ ul.card-bullets li {
 }
 
 @media (max-width: 768px) {
-    nav { padding: 15px 20px; flex-direction: column; gap: 12px; }
-    .card-header { flex-direction: column; gap: 4px; }
+    nav { padding: 15px 20px; flex-direction: column; gap: 15px; }
+    .card-header { flex-direction: column; gap: 6px; }
     .card-date { text-align: left; }
-    .header-contact { flex-direction: column; gap: 6px; }
+    .header-contact { flex-direction: column; gap: 8px; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVIGATION BAR -->
 <nav>
     <h2>Parth Patel</h2>
     <ul>
-        <li onclick="scrollToSection('home')">Home</li>
-        <li onclick="scrollToSection('skills')">Technical Skills</li>
-        <li onclick="scrollToSection('experience')">Professional Experience</li>
-        <li onclick="scrollToSection('projects')">Engineering Projects</li>
+        <li id="tab-home" class="active-tab" onclick="switchView('home')">Home</li>
+        <li id="tab-skills" onclick="switchView('skills')">Technical Skills</li>
+        <li id="tab-experience" onclick="switchView('experience')">Professional Experience</li>
+        <li id="tab-projects" onclick="switchView('projects')">Engineering Projects</li>
     </ul>
 </nav>
 
 <div class="container">
-    <!-- INTRO / HOME -->
-    <div id="home" class="hero">
-        <h1>Parthkumar Patel</h1>
-        <h3>Mechanical Engineering Technologist | Design, Validation & R&D</h3>
-        
-        <div class="header-contact">
-            <span>Email: <a href="mailto:parthpatel1327@gmail.com">parthpatel1327@gmail.com</a></span>
-            <span>•</span>
-            <span>LinkedIn: <a href="https://linkedin.com" target="_blank">View Profile</a></span>
+    <!-- 1. HOME TAB VIEW -->
+    <div id="view-home" class="portfolio-section active-view">
+        <div class="hero">
+            <h1>Parthkumar Patel</h1>
+            <h3>Mechanical Engineering Technologist | Design, Validation & R&D</h3>
+            
+            <div class="header-contact">
+                <span>Email: <a href="mailto:parthpatel1327@gmail.com">parthpatel1327@gmail.com</a></span>
+                <span>•</span>
+                <span>LinkedIn: <a href="https://linkedin.com" target="_blank">View Profile</a></span>
+            </div>
+            
+            <p>
+                Mechanical Engineering Technologist with over four years of experience in design engineering, manufacturing, validation testing, and safety-critical systems. Graduate of Sheridan College's Mechanical Engineering Technology – Design & Drafting program, with hands-on experience supporting automotive, industrial equipment, and applied research projects.
+            </p>
+            <p>
+                Experienced in 3D CAD modeling, engineering drawings, GD&T application, design validation, product testing, traceability implementation, and process improvement. Contributed to safety-critical automotive programs at L&T Technology Services, manufacturing engineering initiatives at Linamar, and structural validation projects for Mobile Elevating Work Platforms (MEWPs) at Skyjack.
+            </p>
+            <p>
+                Proficient in SolidWorks, AutoCAD, Windchill, and engineering data acquisition systems, with a strong ability to bridge design concepts with real-world manufacturing and validation requirements. Recognized for applying analytical problem-solving, technical communication, and cross-functional collaboration to deliver practical, reliable, and manufacturable engineering solutions.
+            </p>
         </div>
-        
-        <p>
-            Mechanical Engineering Technologist with over four years of experience in design engineering, manufacturing, validation testing, and safety-critical systems. Graduate of Sheridan College's Mechanical Engineering Technology – Design & Drafting program, with hands-on experience supporting automotive, industrial equipment, and applied research projects.
-        </p>
-        <p>
-            Experienced in 3D CAD modeling, engineering drawings, GD&T application, design validation, product testing, traceability implementation, and process improvement. Contributed to safety-critical automotive programs at L&T Technology Services, manufacturing engineering initiatives at Linamar, and structural validation projects for Mobile Elevating Work Platforms (MEWPs) at Skyjack.
-        </p>
-        <p>
-            Proficient in SolidWorks, AutoCAD, Windchill, and engineering data acquisition systems, with a strong ability to bridge design concepts with real-world manufacturing and validation requirements. Recognized for applying analytical problem-solving, technical communication, and cross-functional collaboration to deliver practical, reliable, and manufacturable engineering solutions.
-        </p>
     </div>
 
-    <!-- TECHNICAL SKILLS -->
-    <div id="skills">
-        <div class="section-title">Technical Skills</div>
-        <div class="skills-container">
+    <!-- 2. TECHNICAL SKILLS TAB VIEW -->
+    <div id="view-skills" class="portfolio-section">
+        <div class="section-headline">Technical Skills</div>
+        <div class="skills-wrapper">
             <ul>
                 <li><b>CAD Software & Design Tools:</b> SolidWorks, Creo 4.0, AutoCAD, Catia V5, Inventor, 3Ds Max, Master Cam</li>
                 <li><b>Engineering Methods & Analysis:</b> Geometric Dimensioning & Tolerancing (GD&T), Tolerance Stack-up Analysis, Clearance Studies, Design Verification Plan & Report (DVP&R), Failure Mode and Effects Analysis (FMEA), Root Cause Analysis</li>
@@ -301,12 +309,11 @@ ul.card-bullets li {
             </ul>
         </div>
     </div>
-
-    <!-- PROFESSIONAL EXPERIENCE -->
-    <div id="experience">
-        <div class="section-title">Professional Experience</div>
+    <!-- 3. PROFESSIONAL EXPERIENCE TAB VIEW -->
+    <div id="view-experience" class="portfolio-section">
+        <div class="section-headline">Professional Experience</div>
         
-        <!-- SKYJACK -->
+        <!-- Job 1: Skyjack -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -315,10 +322,167 @@ ul.card-bullets li {
                 </div>
                 <div class="card-date">Jan 2025 – May 2025 /<br>Jan 2026 – Apr 2026</div>
             </div>
-            <ul class="card-bullets">
+            <ul class="bullet-list">
                 <li>Designed custom test support equipment including stabilizing catch bars for scissor lift MEWPs and specialized brackets used to mount sensors and testing hardware using SolidWorks and TCE.</li>
                 <li>Collected and analyzed real-time structural validation test data using Somat eDAQ hardware and Somat Infield software to evaluate machine stability, system performance, and component durability.</li>
                 <li>Set up and calibrated test equipment, including new angle and displacement sensors, conducted cyclic increment force testing to analyze tire stiffness, and drafted detailed technical Work Instructions to ensure accurate, repeatable validation procedures.</li>
                 <li>Worked cross-functionally with design, manufacturing, and quality teams to develop and fabricate custom test tooling to support structural validation and North American safety standards compliance.</li>
                 <li>Engineered and implemented an automatic data processing tool to streamline Tire Press testing results, eliminating manual processing and significantly reducing lead times for stability reports.</li>
                 <li>Managed the Global Master Tracker and Priority Tracker to provide progress updates and update Design Verification Plans as requested by global engineering management.</li>
+                <li>Conducted monthly laboratory equipment audits and developed a weekly tracking system for tool usage across multi-disciplinary engineering teams to ensure equipment availability and calibration compliance.</li>
+            </ul>
+        </div>
+
+        <!-- Job 2: Linamar -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3>Mechanical Engineering Co-op</h3>
+                    <div class="card-subtitle">LINAMAR CORPORATION (QUADRAD MFG.) | Guelph, ON</div>
+                </div>
+                <div class="card-date">May 2024 – Aug 2024</div>
+            </div>
+            <ul class="bullet-list">
+                <li>Developed 3D models and detailed 2D engineering drawings using SolidWorks and AutoCAD for manufacturing tools, fixtures, and components in accordance with ISO standards.</li>
+                <li>Designed custom automation components, including grippers and gripper mounts for hobber/shaft applications, alongside sheet metal drip trays to mitigate coolant spillage in robotic cells.</li>
+                <li>Engineered multiple quality inspection fixtures, including V-block based tables, to securely locate cylindrical shafts for repeatable dimensional verification and measurement.</li>
+                <li>Applied strict Geometric Dimensioning & Tolerancing principles, fits, and surface finish specifications to ensure the manufacturability and functional performance of 20MnCr5 steel components.</li>
+                <li>Supported process engineering change requests, participated in Failure Mode and Effects Analysis discussions, and conducted physical Layered Process Audits on the shop floor to verify adherence to standard operating procedures.</li>
+                <li>Coordinated with external vendors and suppliers to obtain quotations for custom tooling, evaluating cost, lead times, and technical feasibility to support procurement decisions.</li>
+                <li>Conducted time studies and workflow optimization to improve cycle times while updating Standard Work Instructions and maintaining revision control of CAD files.</li>
+            </ul>
+        </div>
+
+        <!-- Job 3: L&T -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3>Associate Engineer</h3>
+                    <div class="card-subtitle">L&T TECHNOLOGY SERVICES LIMITED | Mumbai, India</div>
+                </div>
+                <div class="card-date">Oct 2018 – Dec 2022</div>
+            </div>
+            <ul class="bullet-list">
+                <li>Conducted comprehensive quality compliance audits on over 10,000 safety-critical automotive parts to guarantee thorough component traceability.</li>
+                <li>Validated engineering drawings using Creo 4.0, executing precise Geometric Dimensioning & Tolerancing validations, tolerance stack-up analyses, and clearance studies for high-temperature exhaust systems.</li>
+                <li>Developed Engineering Routing Documents to map out correct assembly sequences, electrical harness paths, and component clamping methods to support efficient manufacturing.</li>
+                <li>Audited and corrected detailed Bill of Materials entries within Windchill PLM and AS400 ERP networks to preserve total engineering data integrity and version control.</li>
+                <li>Verified live manufacturing execution of updated traceability standards and ensured the correct usage of QR code-based tracking systems on the assembly lines.</li>
+                <li>Collaborated with cross-functional teams including design, quality, and supply chain to resolve shop floor bottlenecks and support product compliance verification for global markets.</li>
+                <li>Established new traceability processes and workflows, and trained team members and assembly line operators on inspection procedures and quality requirements.</li>
+            </ul>
+        </div>
+
+        <!-- Job 4: Sheridan Research -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3>Research Assistant – Liquid-Liquid Extraction Project (NSERC Funded)</h3>
+                    <div class="card-subtitle">SHERIDAN COLLEGE – CENTRE FOR INTELLIGENT MANUFACTURING | Brampton, ON</div>
+                </div>
+                <div class="card-date">Sep 2024 – Nov 2024</div>
+            </div>
+            <ul class="bullet-list">
+                <li>Designed and refined a 3D CAD model of a sedimentation tank system using SolidWorks to improve phase separation efficiency between aqueous and organic fluids.</li>
+                <li>Applied fluid mechanics and mechanical engineering principles to optimize tank geometry, flow paths, and fluid residence time to support effective gravity-based separation.</li>
+                <li>Developed a comprehensive Piping and Instrumentation Diagram representing the full system layout and built a physical prototype model for active performance testing.</li>
+                <li>Interpreted and incorporated basic chemical engineering concepts such as fluid density differences, immiscible fluid behavior, and separation mechanisms into the mechanical design to reduce contamination risks.</li>
+                <li>Participated in regular technical meetings with academic supervisors and engaged with industry partner engineers during monthly reviews to present design concepts and align the prototype with real-world engineering expectations.</li>
+                <li>Maintained structured engineering logs detailing design variations, recorded experimental observations, and documented project methodologies for internal reports and knowledge transfer.</li>
+            </ul>
+        </div>
+
+        <!-- Job 5: Sheridan Tutor -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3>Peer Library Tutor</h3>
+                    <div class="card-subtitle">SHERIDAN COLLEGE – ILS: LEARNING SERVICES | Oakville, ON</div>
+                </div>
+                <div class="card-date">Aug 2023 – Aug 2025</div>
+            </div>
+            <ul class="bullet-list">
+                <li>Provided targeted, program-specific academic support and course-specific tutoring to student peers across consecutive term contracts.</li>
+                <li>Attended live academic lectures to remain fully aligned with course progression and developed structured lesson plans to lead post-lecture group tutorials.</li>
+                <li>Promoted open tutoring hours within the Learn Well Virtual Communities and managed student booking appointments seamlessly through the TutorOcean platform.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 4. ENGINEERING PROJECTS TAB VIEW -->
+    <div id="view-projects" class="portfolio-section">
+        <div class="section-headline">Engineering Projects</div>
+        <!-- Project 1: Snow Blower -->
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            <h3>Savvy Snow Blower (Robotic Capstone)</h3>
+        </div>
+    </div>
+    
+    <!-- OPTIONAL IMAGE CONTAINER -->
+    <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; max-height: 400px; border: 1px solid #e2e8f0;">
+        <img src="YOUR_IMAGE_HERE" alt="Savvy Snow Blower Prototype" style="width: 100%; height: auto; display: block; object-fit: cover;">
+    </div>
+
+    <ul class="bullet-list">
+        <li>Fabricated full structural chassis and protective housing utilizing precision laser-cut clear acrylic panels to allow internal mechanical visual inspection.</li>
+        <li>Integrated, wired, and configured an Arduino microcontroller interface alongside Electronic Speed Controllers (ESCs) and high-torque DC motors.</li>
+        <li>Programmed a dedicated responsive web user interface using HTML/CSS/JavaScript to empower wireless remote vehicle controls via mobile applications.</li>
+        <li>Calibrated complex battery power distribution systems to safely and simultaneously drive vehicle drivetrains and the main snow-throwing auger mechanism.</li>
+    </ul>
+    <div class="meta-info"><b>Objective:</b> Low-cost, fully operational robotic snow blower under $500 CAD featuring wireless web-based control.</div>
+    <div class="meta-info"><b>Tools Used:</b> Arduino IDE (C++), Laser Cutting & Acrylic Fabrication Tools, HTML/CSS/JavaScript, Multimeter, Lab Power Supplies.</div>
+</div>
+<!-- Project 2: Suspension -->
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            <h3>Automotive Suspension System Design & FEA Analysis</h3>
+        </div>
+    </div>
+    
+    <!-- OPTIONAL IMAGE CONTAINER -->
+    <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; max-height: 400px; border: 1px solid #e2e8f0;">
+        <img src="YOUR_IMAGE_HERE" alt="Suspension Assembly & FEA Stress Map" style="width: 100%; height: auto; display: block; object-fit: cover;">
+    </div>
+
+    <ul class="bullet-list">
+        <li>Formulated parametric 3D models of suspension links, steering knuckles, and heavy-duty frame mounting brackets based on target suspension geometries.</li>
+        <li>Conducted Digital Mock-Up (DMU) Kinematics simulations to map travel paths, dynamic camber adjustments, and rolling center shifts.</li>
+        <li>Executed rigorous Finite Element Analysis (FEA) structural validation on critical high-stress parts to confirm reliable yields under loading constraints.</li>
+        <li>Generated manufacturing-ready 2D technical layout prints utilizing strict Geometric Dimensioning and Tolerancing (GD&T) annotations.</li>
+    </ul>
+    <div class="project-meta"><b>Objective:</b> Complete end-to-end parametric design, kinematic simulation, and structural validation of a functional vehicle assembly.</div>
+    <div class="project-meta"><b>Tools Used:</b> CATIA V5 (Part Design, Assembly Design, DMU Kinematics, Generative Structural Analysis).</div>
+</div>
+<!-- Project 3: Mold Design -->
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            <h3>Portable Drill Tool Mold Design & Production Feasibility</h3>
+        </div>
+    </div>
+    
+    <!-- OPTIONAL IMAGE CONTAINER -->
+    <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; max-height: 400px; border: 1px solid #e2e8f0;">
+        <img src="YOUR_IMAGE_HERE" alt="Core and Cavity Splitting Layout" style="width: 100%; height: auto; display: block; object-fit: cover;">
+    </div>
+
+    <ul class="bullet-list">
+        <li>Engineered exact 3D tool housing geometries and established full custom mold-base structural component assemblies.</li>
+        <li>Generated matching internal mold cavity and core structural blocks to achieve proper component splitting parameters.</li>
+        <li>Conducted production flow and feasibility analyses within SolidWorks Plastic to predict cavity filling paths, material cooling properties, and weld-line vulnerabilities.</li>
+    </ul>
+    <div class="project-meta"><b>Objective:</b> Complete core-and-cavity layout and injection molding simulation to evaluate high-volume tool component manufacturing safety.</div>
+    <div class="project-meta"><b>Tools Used:</b> Autodesk Inventor 2025, SolidWorks Plastic.</div>
+</div>
+<!-- TECHNICAL DRAFTING GALLERY QUICK VIEWS -->
+<h3 style="color: #0f172a; margin-top: 40px; margin-bottom: 10px; font-size: 19px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 8px;">Technical Drafting & Modeling Portfolio</h3>
+<div class="gallery-grid">
+    <div class="gallery-card">Industrial Belt Conveyor Systems (30 kW)</div>
+    <div class="gallery-card">Box Jig Precision Machining</div>
+    <div class="gallery-card">SolidWorks Plate & Channel Jigs</div>
+    <div class="gallery-card">AutoCAD 2D Transfer Sub-Assemblies</div>
+    <div class="gallery-card">3D Industrial Piping Plant Layouts</div>
+    <div class="gallery-card">AutoCAD 3D Cross Head Assemblies</div>
+</div>
