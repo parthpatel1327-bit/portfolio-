@@ -258,9 +258,9 @@ ul.bullet-list li {
 </head>
 <body>
 
-<!-- NAVIGATION BAR -->
+<!-- NAVIGATION BAR (TOP LEFT DUPLICATE REMOVED) -->
 <nav>
-    <h2>Parth Patel</h2>
+    <div style="font-size: 22px; font-weight: bold; color: #0f172a; visibility: hidden; pointer-events: none;">Parth Patel</div>
     <ul>
         <li id="tab-home" class="active-tab" onclick="switchView('home')">Home</li>
         <li id="tab-skills" onclick="switchView('skills')">Technical Skills</li>
@@ -270,16 +270,22 @@ ul.bullet-list li {
 </nav>
 
 <div class="container">
-          <!-- 1. HOME TAB VIEW -->
+    <!-- 1. HOME TAB VIEW (CORRECT PROFILE PICTURE LEFT ALIGNMENT) -->
     <div id="view-home" class="portfolio-section active-view">
-        <!-- FLEX DASHBOARD WRAPPER ALIGNED TO TOP -->
         <div style="display: flex; gap: 40px; align-items: flex-start; justify-content: space-between; margin-top: 0; flex-wrap: wrap-reverse;">
             
-            <!-- LEFT PROFILE TEXT CONTAINER -->
+            <!-- NEW CORNER PROFESSIONAL HEADSHOT POSITION -->
+            <div style="width: 170px; text-align: center; margin-top: 0; padding-top: 0; flex-shrink: 0;">
+                <div style="width: 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 4px solid white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15), 0 8px 10px -6px rgba(0,0,0,0.15); background: #f1f5f9; margin: 0;">
+                    <img src="images/profile-picture.jpg" alt="Parthkumar Patel Professional Portrait" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+            </div>
+
+            <!-- MAIN TEXT DETAILS BLOCK -->
             <div style="flex: 1; min-width: 300px;">
                 <div class="hero" style="margin-bottom: 0; padding-top: 0;">
-                    <h1 style="margin-top: 0; padding-top: 0; line-height: 1.1;">Parthkumar Patel</h1>
-                    <h3>Mechanical Engineering Technologist | Design, Validation & R&D</h3>
+                    <h1 style="margin-top: 0; padding-top: 0; line-height: 1.1; font-size: 38px;">Parthkumar Patel</h1>
+                    <h3 style="font-size: 20px;">Mechanical Engineering- Design & Drafting | Design & Validation Engineering | Product Design | Manufacturing Engineering | OACETT Member |</h3>
                     
                     <div class="header-contact">
                         <span>Email: <a href="mailto:parthpatel1327@gmail.com">parthpatel1327@gmail.com</a></span>
@@ -298,6 +304,10 @@ ul.bullet-list li {
                     </p>
                 </div>
             </div>
+
+        </div>
+    </div> <!-- END OF view-home -->
+
 
             <!-- RIGHT PROFESSIONAL HEADSHOT CONTAINER ALIGNED HIGHER -->
             <div style="width: 220px; text-align: center; margin-top: 0; padding-top: 0; flex-shrink: 0;">
