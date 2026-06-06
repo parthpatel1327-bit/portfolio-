@@ -528,34 +528,39 @@ ul.bullet-list li {
             <div class="meta-info"><b>Objective:</b> Create a functional 3D model with appropriate assembly constraints and generate technical documentation with exploded views using Inventor presentation toolsets.</div>
             <div class="meta-info"><b>Tools Used:</b> Autodesk Inventor 2025 (Part Modeling, Assembly, Presentation Storyboards, Drawing Sheets).</div>
         </div>
-        <!-- Project 5: Reciprocating Saw Dynamic Simulation -->
+              <!-- Project 5: Reciprocating Saw Dynamic Simulation -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
                     <h3>Reciprocating Saw Kinematic & Dynamic Simulation</h3>
                 </div>
             </div>
-            <div style="margin-bottom: 12px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; max-height: 340px; background: white;">
-                <img src="images/saw-simulation-ui.jpg" alt="Autodesk Inventor 3D Internal Mechanism Viewport" onclick="openLightbox(this)" style="width: 100%; height: auto; display: block; object-fit: contain; cursor: pointer;">
+
+            <!-- PRIMARY INTERFACE VIEWPORT WITH ZOOM -->
+            <div style="margin-bottom: 12px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 340px; background: #ffffff;">
+                <img src="images/saw-simulation-ui.jpg" alt="Autodesk Inventor 3D Internal Mechanism Viewport" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
+
+            <!-- RESPONSIVE DYNAMIC PERFORMANCE GRAPHS MENU WITH ZOOM -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px;">
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-modified-contact.jpg" alt="Modified 2D Contact Joint Output Graph" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Modified 2D Contact Graph</div>
+                    <img src="images/saw-graph-modified-contact.jpg" alt="Modified 2D Contact Joint Output Graph" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Modified 2D Contact Graph</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-modified-rolling.jpg" alt="Modified Rolling Joint Performance Data" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Modified Rolling Joint Graph</div>
+                    <img src="images/saw-graph-modified-rolling.jpg" alt="Modified Rolling Joint Performance Data" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Modified Rolling Joint Graph</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-unmodified-rolling.jpg" alt="Unmodified Rolling Joint Base Graph" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <img src="images/saw-graph-unmodified-rolling.jpg" alt="Unmodified Rolling Joint Base Graph" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
                     <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Baseline Rolling Joint Graph</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-unmodified-contact.jpg" alt="Unmodified 2D Contact Baseline Analysis" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <img src="images/saw-graph-unmodified-contact.jpg" alt="Unmodified 2D Contact Baseline Analysis" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
                     <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Baseline 2D Contact Graph</div>
                 </div>
             </div>
+
             <ul class="bullet-list">
                 <li>Configured an advanced Dynamic Simulation environment to convert rotational input torque commands directly into clean linear reciprocating saw trajectories.</li>
                 <li>Mapped exact degrees of freedom across multi-body assemblies using complex constraints, including 2D Contact, Force, and Rolling joint mechanics.</li>
@@ -565,42 +570,48 @@ ul.bullet-list li {
             <div class="meta-info"><b>Objective:</b> Construct a rigorous mechanical reciprocating motion simulation while troubleshooting mechanical damping and friction constraints to optimize return spring action profiles.</div>
             <div class="meta-info"><b>Tools Used:</b> Autodesk Inventor 2025 (Dynamic Simulation Environment, Joint Configuration Matrices, Output Graphing Plotter Tools).</div>
         </div>
-        <!-- Project 6: Portable Drill Mold Design -->
+
+               <!-- Project 6: Portable Drill Mold Design -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
                     <h3>Portable Drill Housing Mold Design & Plastic Injection Feasibility</h3>
                 </div>
             </div>
-            <div style="margin-bottom: 12px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; max-height: 340px; background: white;">
-                <img src="images/drill-housing-ui.jpg" alt="Autodesk Inventor 3D Drill Casing Model Viewport" onclick="openLightbox(this)" style="width: 100%; height: auto; display: block; object-fit: contain; cursor: pointer;">
+
+            <!-- PRIMARY TOOL MODEL VIEWPORT WITH ZOOM -->
+            <div style="margin-bottom: 12px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 340px; background: #ffffff;">
+                <img src="images/drill-housing-ui.jpg" alt="Autodesk Inventor 3D Drill Casing Model Viewport" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
+
+            <!-- RESPONSIVE 2X3 TOOLING & SIMULATION ANALYSIS DASHBOARD WITH ZOOM -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 20px;">
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-parting.jpg" alt="Mold Parting Surface Generation Workspace" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Parting Line Definition</div>
+                    <img src="images/drill-mold-parting.jpg" alt="Mold Parting Surface Generation Workspace" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Parting Line Definition</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-core-cavity.jpg" alt="Splitting Core and Cavity Tool Blocks" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Core & Cavity Generation</div>
+                    <img src="images/drill-mold-core-cavity.jpg" alt="Splitting Core and Cavity Tool Blocks" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Core & Cavity Generation</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-assembly.jpg" alt="Complete Custom Mold-Base Structural Assembly" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Complete Mold Base Assembly</div>
+                    <img src="images/drill-mold-assembly.jpg" alt="Complete Custom Mold-Base Structural Assembly" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Complete Mold Base Assembly</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-drawing.jpg" alt="2D Tooling Production Print Blueprint Layout" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">2D Machining Tooling Drawing</div>
+                    <img src="images/drill-mold-drawing.jpg" alt="2D Tooling Production Print Blueprint Layout" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">2D Machining Tooling Drawing</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-plastic-flow.jpg" alt="SolidWorks Plastic Cavity Filling Time Heat Map" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Plastic Flow Injection Simulation</div>
+                    <img src="images/drill-plastic-flow.jpg" alt="SolidWorks Plastic Cavity Filling Time Heat Map" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Plastic Flow Injection Simulation</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-plastic-mesh.jpg" alt="Volumetric Finite Element Flow Meshing Casing" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">FEA Boundary Layer Mesh</div>
+                    <img src="images/drill-plastic-mesh.jpg" alt="Volumetric Finite Element Flow Meshing Casing" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;" title="Click to view full screen">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.85); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">FEA Boundary Layer Mesh</div>
                 </div>
             </div>
+
             <ul class="bullet-list">
                 <li>Engineered detailed 3D shell part geometries for a portable drill tool casing with complex ergonomic grip features using parametric CAD software.</li>
                 <li>Generated exact manufacturing tooling boundaries by evaluating parting lines, drafting side-core splits, and extracting matching cavity/core mold blocks.</li>
@@ -611,6 +622,7 @@ ul.bullet-list li {
             <div class="meta-info"><b>Objective:</b> Design and evaluate the high-volume mass production manufacturing feasibility of a custom portable drill casing model using advanced injection tooling workflows.</div>
             <div class="meta-info"><b>Tools Used:</b> Autodesk Inventor 2025 (Mold Design Workspace, Assembly Modeling), SolidWorks Plastic (Injection Fluid FEA, Volumetric Meshing Tools).</div>
         </div>
+
         <!-- Project 7: 3D Plant Model -->
         <div class="card">
             <div class="card-header">
