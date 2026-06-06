@@ -412,27 +412,24 @@ ul.bullet-list li {
     <div id="view-projects" class="portfolio-section">
         <div class="section-headline">Engineering Projects</div>
 
-               <!-- Project 1: Snow Blower -->
+              <!-- Project 1: Snow Blower -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
                     <h3>Savvy Snow Blower (Robotic Capstone)</h3>
                 </div>
             </div>
-
-            <!-- RESPONSIVE PROJECT PHOTO GRID -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px;">
-                <div style="border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px;">
-                    <img src="images/snowblower-chassis.jpg" alt="Savvy Snow Blower Prototype" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; background: #ffffff;">
+                    <img src="images/snowblower-chassis.jpg" alt="Savvy Snow Blower Prototype" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
                 </div>
-                <div style="border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px;">
-                    <img src="images/snowblower-mechanics.jpg" alt="Internal Mechanical Routing" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; background: #ffffff;">
+                    <img src="images/snowblower-mechanics.jpg" alt="Internal Mechanical Routing" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
                 </div>
-                <div style="border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px;">
-                    <img src="images/snowblower-control.jpg" alt="Wireless Mobile Control Interface" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; background: #ffffff;">
+                    <img src="images/snowblower-control.jpg" alt="Wireless Mobile Control Interface" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
                 </div>
             </div>
-
             <ul class="bullet-list">
                 <li>Fabricated full structural chassis and protective housing utilizing precision laser-cut clear acrylic panels to allow internal mechanical visual inspection.</li>
                 <li>Integrated, wired, and configured an Arduino microcontroller interface alongside Electronic Speed Controllers (ESCs) and high-torque DC motors.</li>
@@ -443,35 +440,31 @@ ul.bullet-list li {
             <div class="meta-info"><b>Tools Used:</b> Arduino IDE (C++), Laser Cutting & Acrylic Fabrication Tools, HTML/CSS/JavaScript, Multimeter, Lab Power Supplies.</div>
         </div>
 
-
-               <!-- Project 2: Suspension -->
+             <!-- Project 2: Suspension -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
                     <h3>Automotive Suspension System Design & FEA Analysis</h3>
                 </div>
             </div>
-
-            <!-- RESPONSIVE 2X2 ENGINEERING MAPPING GRID -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px;">
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/suspension-full.jpg" alt="3D Parametric Suspension Assembly" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">3D Render Layout</div>
+                    <img src="images/suspension-full.jpg" alt="3D Parametric Suspension Assembly" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">3D Render Layout</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/suspension-kinematics.jpg" alt="DMU Kinematic Motion Trajectory Study" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Kinematics Simulation</div>
+                    <img src="images/suspension-kinematics.jpg" alt="DMU Kinematic Motion Trajectory Study" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Kinematics Simulation</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/suspension-fea.jpg" alt="Generative Structural FEA Control Arm Validation" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Finite Element Analysis (FEA)</div>
+                    <img src="images/suspension-fea.jpg" alt="Generative Structural FEA Control Arm Validation" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Finite Element Analysis (FEA)</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/suspension-bom.jpg" alt="Exploded Assembly Bill of Materials Diagram" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Exploded Assembly Print</div>
+                    <img src="images/suspension-bom.jpg" alt="Exploded Assembly Bill of Materials Diagram" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Exploded Assembly Print</div>
                 </div>
             </div>
-
             <ul class="bullet-list">
                 <li>Formulated parametric 3D models of suspension links, steering knuckles, and heavy-duty frame mounting brackets based on target suspension geometries.</li>
                 <li>Conducted Digital Mock-Up (DMU) Kinematics simulations to map travel paths, dynamic camber adjustments, and rolling center shifts.</li>
@@ -489,12 +482,9 @@ ul.bullet-list li {
                     <h3>Industrial Belt Conveyor System Design (30 kW)</h3>
                 </div>
             </div>
-
-            <!-- SOLIDWORKS 3D MODEL VIEWPORT -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; max-height: 380px; background: white;">
-                <img src="images/conveyor-system.jpg" alt="SolidWorks 3D Conveyor Assembly Model" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                <img src="images/conveyor-system.jpg" alt="SolidWorks 3D Conveyor Assembly Model" onclick="openLightbox(this)" style="width: 100%; height: auto; display: block; object-fit: contain; cursor: pointer;">
             </div>
-
             <ul class="bullet-list">
                 <li>Performed detailed material load capacity models and effective tension calculations to support heavy agricultural bulk hauling profiles.</li>
                 <li>Selected industrial belt gradings, optimized belt rubber face thicknesses, and calculated minimum terminal pulley layout diameters.</li>
@@ -511,23 +501,20 @@ ul.bullet-list li {
                     <h3>I-Beam Trolley Assembly & Exploded Layout</h3>
                 </div>
             </div>
-
-            <!-- RESPONSIVE ENGINEERING GRAPHICS GRID -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 20px;">
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 200px; position: relative;">
-                    <img src="images/trolley-renders.jpg" alt="Autodesk Inventor 3D Assembly Renders" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">3D Assembly Alignment Profiles</div>
+                    <img src="images/trolley-renders.jpg" alt="Autodesk Inventor 3D Assembly Renders" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">3D Assembly Alignment Profiles</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 200px; position: relative;">
-                    <img src="images/trolley-exploded-print.jpg" alt="2D Exploded Production Drawing with Bill of Materials" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">2D Exploded Print & Bill of Materials</div>
+                    <img src="images/trolley-exploded-print.jpg" alt="2D Exploded Production Drawing with Bill of Materials" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">2D Exploded Print & Bill of Materials</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 200px; position: relative;">
-                    <img src="images/trolley-inventor-ui.jpg" alt="Autodesk Inventor Storyboard Timeline Configuration" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Inventor Presentation Workplace UI</div>
+                    <img src="images/trolley-inventor-ui.jpg" alt="Autodesk Inventor Storyboard Timeline Configuration" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Inventor Presentation Workplace UI</div>
                 </div>
             </div>
-
             <ul class="bullet-list">
                 <li>Translated complex 2D technical drawings of loose components into fully constrained 3D part models using parametric design systems.</li>
                 <li>Applied exact mechanical assembly relationships and joint limits to ensure proper physical tracking performance along the target I-beam path.</li>
@@ -544,32 +531,27 @@ ul.bullet-list li {
                     <h3>Reciprocating Saw Kinematic & Dynamic Simulation</h3>
                 </div>
             </div>
-
-            <!-- PRIMARY INTERFACE VIEWPORT -->
             <div style="margin-bottom: 12px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; max-height: 340px; background: white;">
-                <img src="images/saw-simulation-ui.jpg" alt="Autodesk Inventor 3D Internal Mechanism Viewport" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                <img src="images/saw-simulation-ui.jpg" alt="Autodesk Inventor 3D Internal Mechanism Viewport" onclick="openLightbox(this)" style="width: 100%; height: auto; display: block; object-fit: contain; cursor: pointer;">
             </div>
-
-            <!-- RESPONSIVE 2X2 DYNAMIC PERFORMANCE GRAPHS MENU -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px;">
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-modified-contact.jpg" alt="Modified 2D Contact Joint Output Graph" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Modified 2D Contact Graph</div>
+                    <img src="images/saw-graph-modified-contact.jpg" alt="Modified 2D Contact Joint Output Graph" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Modified 2D Contact Graph</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-modified-rolling.jpg" alt="Modified Rolling Joint Performance Data" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Modified Rolling Joint Graph</div>
+                    <img src="images/saw-graph-modified-rolling.jpg" alt="Modified Rolling Joint Performance Data" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Modified Rolling Joint Graph</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-unmodified-rolling.jpg" alt="Unmodified Rolling Joint Base Graph" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Baseline Rolling Joint Graph</div>
+                    <img src="images/saw-graph-unmodified-rolling.jpg" alt="Unmodified Rolling Joint Base Graph" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Baseline Rolling Joint Graph</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 160px; position: relative;">
-                    <img src="images/saw-graph-unmodified-contact.jpg" alt="Unmodified 2D Contact Baseline Analysis" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Baseline 2D Contact Graph</div>
+                    <img src="images/saw-graph-unmodified-contact.jpg" alt="Unmodified 2D Contact Baseline Analysis" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Baseline 2D Contact Graph</div>
                 </div>
             </div>
-
             <ul class="bullet-list">
                 <li>Configured an advanced Dynamic Simulation environment to convert rotational input torque commands directly into clean linear reciprocating saw trajectories.</li>
                 <li>Mapped exact degrees of freedom across multi-body assemblies using complex constraints, including 2D Contact, Force, and Rolling joint mechanics.</li>
@@ -586,46 +568,41 @@ ul.bullet-list li {
                     <h3>Portable Drill Housing Mold Design & Plastic Injection Feasibility</h3>
                 </div>
             </div>
-
-            <!-- PRIMARY TOOL MODEL VIEWPORT -->
             <div style="margin-bottom: 12px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; max-height: 340px; background: white;">
-                <img src="images/drill-housing-ui.jpg" alt="Autodesk Inventor 3D Drill Casing Model Viewport" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                <img src="images/drill-housing-ui.jpg" alt="Autodesk Inventor 3D Drill Casing Model Viewport" onclick="openLightbox(this)" style="width: 100%; height: auto; display: block; object-fit: contain; cursor: pointer;">
             </div>
-
-            <!-- RESPONSIVE 2X3 TOOLING & SIMULATION ANALYSIS DASHBOARD -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 20px;">
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-parting.jpg" alt="Mold Parting Surface Generation Workspace" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Parting Line Definition</div>
+                    <img src="images/drill-mold-parting.jpg" alt="Mold Parting Surface Generation Workspace" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Parting Line Definition</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-core-cavity.jpg" alt="Splitting Core and Cavity Tool Blocks" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Core & Cavity Generation</div>
+                    <img src="images/drill-mold-core-cavity.jpg" alt="Splitting Core and Cavity Tool Blocks" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Core & Cavity Generation</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-assembly.jpg" alt="Complete Custom Mold-Base Structural Assembly" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Complete Mold Base Assembly</div>
+                    <img src="images/drill-mold-assembly.jpg" alt="Complete Custom Mold-Base Structural Assembly" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Complete Mold Base Assembly</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-mold-drawing.jpg" alt="2D Tooling Production Print Blueprint Layout" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">2D Machining Tooling Drawing</div>
+                    <img src="images/drill-mold-drawing.jpg" alt="2D Tooling Production Print Blueprint Layout" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">2D Machining Tooling Drawing</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-plastic-flow.jpg" alt="SolidWorks Plastic Cavity Filling Time Heat Map" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Plastic Flow Injection Simulation</div>
+                    <img src="images/drill-plastic-flow.jpg" alt="SolidWorks Plastic Cavity Filling Time Heat Map" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Plastic Flow Injection Simulation</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 180px; position: relative;">
-                    <img src="images/drill-plastic-mesh.jpg" alt="Volumetric Finite Element Flow Meshing Casing" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">FEA Boundary Layer Mesh</div>
+                    <img src="images/drill-plastic-mesh.jpg" alt="Volumetric Finite Element Flow Meshing Casing" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">FEA Boundary Layer Mesh</div>
                 </div>
             </div>
-
             <ul class="bullet-list">
                 <li>Engineered detailed 3D shell part geometries for a portable drill tool casing with complex ergonomic grip features using parametric CAD software.</li>
                 <li>Generated exact manufacturing tooling boundaries by evaluating parting lines, drafting side-core splits, and extracting matching cavity/core mold blocks.</li>
                 <li>Constructed full standard multi-plate mold-base assemblies featuring proper guide pins, locating rings, and integrated cooling channel loops.</li>
                 <li>Executed comprehensive non-linear plastic injection fill simulations within SolidWorks Plastic to map material cooling paths and isolate potential air traps or knit lines.</li>
-            <li>Generated complete multi-view 2D engineering drawings and tooling prints with advanced section break dimensions to support high-volume shop floor machining operations.</li>
+                <li>Generated complete multi-view 2D engineering drawings and tooling prints with advanced section break dimensions to support high-volume shop floor machining operations.</li>
             </ul>
             <div class="meta-info"><b>Objective:</b> Design and evaluate the high-volume mass production manufacturing feasibility of a custom portable drill casing model using advanced injection tooling workflows.</div>
             <div class="meta-info"><b>Tools Used:</b> Autodesk Inventor 2025 (Mold Design Workspace, Assembly Modeling), SolidWorks Plastic (Injection Fluid FEA, Volumetric Meshing Tools).</div>
@@ -638,19 +615,16 @@ ul.bullet-list li {
                 </div>
                 <div class="card-date">Duration: 4 months</div>
             </div>
-
-            <!-- SIDE-BY-SIDE ISOMETRIC PLANT VIEWS -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 20px;">
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 210px; position: relative;">
-                    <img src="images/plant-model-view1.jpg" alt="CATIA V5 3D Plant Model Left Angle View" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Isometric Isometric Routing profile - View A</div>
+                    <img src="images/plant-model-view1.jpg" alt="CATIA V5 3D Plant Model Left Angle View" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Isometric Routing profile - View A</div>
                 </div>
                 <div style="background: white; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 210px; position: relative;">
-                    <img src="images/plant-model-view2.jpg" alt="CATIA V5 3D Plant Model Right Angle View" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500;">Isometric Routing Profile - View B</div>
+                    <img src="images/plant-model-view2.jpg" alt="CATIA V5 3D Plant Model Right Angle View" onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: contain; cursor: pointer;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15,23,42,0.75); color: white; font-size: 11px; padding: 4px 8px; font-weight: 500; pointer-events: none;">Isometric Routing Profile - View B</div>
                 </div>
             </div>
-
             <ul class="bullet-list">
                 <li>Developed complex 3D plant assemblies incorporating interconnected pipeline loops, pressure vessels, structural foundations, and equipment support anchors.</li>
                 <li>Executed advanced pipe drafting, mechanical configuration design, and calculated dimensional paths for process fluids.</li>
@@ -660,6 +634,7 @@ ul.bullet-list li {
             <div class="meta-info"><b>Objective:</b> Create a comprehensive 3D industrial plant environment using CATIA V5 to map out complex pipeline routings, equipment configurations, and dimensional constraints.</div>
             <div class="meta-info"><b>Tools Used:</b> CATIA V5 (Piping & Equipment Design), AutoCAD (2D Arrangements), Microsoft Excel (Sizing Calculations).</div>
         </div>
+
                <!-- Project 8: Box Jig Manufacturing -->
         <div class="card">
             <div class="card-header">
@@ -720,8 +695,7 @@ ul.bullet-list li {
             }
             </script>
         </div>
-
-        <!-- Project 9: Plate Jig -->
+            <!-- Project 9: Plate Jig -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -730,9 +704,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: 24-110</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/plate-jig-blueprint.jpg" alt="SolidWorks Plate Jig Assembly Engineering Print Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/plate-jig-blueprint.jpg" alt="SolidWorks Plate Jig Assembly Engineering Print Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -746,7 +720,7 @@ ul.bullet-list li {
         </div>
 
 
-             <!-- Project 10: Channel Jig -->
+               <!-- Project 10: Channel Jig -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -755,9 +729,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: 24-220</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/channel-jig-blueprint.jpg" alt="SolidWorks Channel Jig Manufacturing Drawing Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/channel-jig-blueprint.jpg" alt="SolidWorks Channel Jig Manufacturing Drawing Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -770,7 +744,8 @@ ul.bullet-list li {
             <div class="meta-info"><b>Tools Used:</b> SolidWorks (Detailing, Mechanical Modeling, Assembly Views, Stack-Up Tolerance Analysis).</div>
         </div>
 
-              <!-- Project 11: Modular Fixture Table -->
+
+                 <!-- Project 11: Modular Fixture Table -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -779,9 +754,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: MF12-34</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/modular-fixture-blueprint.jpg" alt="SolidWorks Modular Fixture Table Engineering Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/modular-fixture-blueprint.jpg" alt="SolidWorks Modular Fixture Table Engineering Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -794,7 +769,8 @@ ul.bullet-list li {
             <div class="meta-info"><b>Tools Used:</b> SolidWorks (Weldment Design, Feature Patterning, Detail Scaling, Custom Bill of Materials Assemblies).</div>
         </div>
 
-               <!-- Project 12: Transfer Fixture -->
+
+                     <!-- Project 12: Transfer Fixture -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -803,9 +779,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: W2-10</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/transfer-fixture-blueprint.jpg" alt="SolidWorks Transfer Fixture Engineering Print Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/transfer-fixture-blueprint.jpg" alt="SolidWorks Transfer Fixture Engineering Print Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -818,7 +794,8 @@ ul.bullet-list li {
             <div class="meta-info"><b>Tools Used:</b> SolidWorks (Detailing, Section Profiling, Component Assemblies, Engineering Change Notice Configuration).</div>
         </div>
 
-               <!-- Project 13: Transfer Sub-Assembly -->
+
+                  <!-- Project 13: Transfer Sub-Assembly -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -827,9 +804,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: P-23-112</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/transfer-sub-assembly-blueprint.jpg" alt="Sheridan College Transfer Sub-Assembly Engineering Drawing Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/transfer-sub-assembly-blueprint.jpg" alt="Sheridan College Transfer Sub-Assembly Engineering Drawing Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -842,7 +819,7 @@ ul.bullet-list li {
             <div class="meta-info"><b>Tools Used:</b> SolidWorks / AutoCAD (Sub-Assembly Modeling, Auxiliary Sectioning, Complex Fastener Tolerances).</div>
         </div>
 
-               <!-- Project 14: Holder Component -->
+        <!-- Project 14: Holder Component -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -851,9 +828,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: A6</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/holder-blueprint.jpg" alt="Sheridan College Holder Component Engineering Drawing Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/holder-blueprint.jpg" alt="Sheridan College Holder Component Engineering Drawing Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -866,7 +843,7 @@ ul.bullet-list li {
             <div class="meta-info"><b>Tools Used:</b> SolidWorks / AutoCAD (Parametric Modeling, Keyway Slot Broaching Configurations, Concentric Sectioning, Precision Tolerance Allocation).</div>
         </div>
 
-              <!-- Project 15: Block Component -->
+                    <!-- Project 15: Block Component -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -875,9 +852,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: 26463</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/block-component-blueprint.jpg" alt="Parth Patel Project 1 Block Component Engineering Drawing Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/block-component-blueprint.jpg" alt="Parth Patel Project 1 Block Component Engineering Drawing Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -898,12 +875,9 @@ ul.bullet-list li {
                 </div>
                 <div class="card-date">Drawing Series: C-00 to C-05</div>
             </div>
-
-            <!-- MULTI-SHEET ENGINEERING PACKAGE DISPLAY GRID -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; background: white;">
-                <img src="images/cross-head-package.jpg" alt="Parth Patel Cross Head Assembly Multi-Sheet Engineering Drawing Package" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                <img src="images/cross-head-package.jpg" alt="Parth Patel Cross Head Assembly Multi-Sheet Engineering Drawing Package" onclick="openLightbox(this)" style="width: 100%; height: auto; display: block; object-fit: contain; cursor: pointer;">
             </div>
-
             <ul class="bullet-list">
                 <li>Engineered a full 6-sheet industrial production drawing package for a mechanical cross head mechanism, mapping out complete component interactions, assembly fits, and individual part geometries.</li>
                 <li>Developed the primary multi-view assembly sheet (Drawing No. C-00) incorporating localized cross-sections, 3D exploded alignments, and a comprehensive engineering Bill of Materials (BOM) specifying component hierarchy and steel material listings.</li>
@@ -913,7 +887,8 @@ ul.bullet-list li {
             <div class="meta-info"><b>Objective:</b> Deliver a complete multi-sheet engineering drawing package that translates a multi-body mechanical system into structured, production-ready part detailing blueprints, detailed Bill of Materials tables, and clear exploded assembly layouts.</div>
             <div class="meta-info"><b>Tools Used:</b> SolidWorks / AutoCAD (Advanced Assembly Detailing, Exploded Presentations, Component Print Sectioning, Manufacturing Surface Texture Control).</div>
         </div>
-            <!-- Project 17: Wrench Block -->
+
+                 <!-- Project 17: Wrench Block -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -922,9 +897,9 @@ ul.bullet-list li {
                 <div class="card-date">Drawing No: 3569</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 420px; background: #ffffff;">
-                <img src="images/wrench-block-blueprint.jpg" alt="Parth Patel Wrench Block Component Engineering Drawing Sheet" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/wrench-block-blueprint.jpg" alt="Parth Patel Wrench Block Component Engineering Drawing Sheet" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
@@ -937,7 +912,7 @@ ul.bullet-list li {
             <div class="meta-info"><b>Tools Used:</b> SolidWorks / AutoCAD (Parametric Component Modeling, Geometric Layout Detailing, Clamping Feature Design, Surface Quality Metrics).</div>
         </div>
 
-               <!-- Project 18: 3D House Model -->
+                  <!-- Project 18: 3D House Model -->
         <div class="card">
             <div class="card-header">
                 <div class="card-title">
@@ -946,9 +921,9 @@ ul.bullet-list li {
                 <div class="card-date">CAD Portfolio Project</div>
             </div>
 
-            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER -->
+            <!-- ZOOMED-OUT MODEL VIEWPORT CONTAINER WITH CLICK-TO-ZOOM -->
             <div style="margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; height: 460px; background: #1e1e1e;">
-                <img src="images/3d-house-model.jpg" alt="3D Residential Architectural Model and Landscaping Layout" style="width: 100%; height: 100%; display: block; object-fit: contain;">
+                <img src="images/3d-house-model.jpg" alt="3D Residential Architectural Model and Landscaping Layout" onclick="openLightbox(this)" style="width: 100%; height: 100%; display: block; object-fit: contain; cursor: pointer;" title="Click to view full screen">
             </div>
 
             <ul class="bullet-list">
